@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: antiquewhite;
+}
+section {
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+img {
+    max-height: 500px;
+    place-self: center;
+    max-width: 100%;
+}
+
+div {
+    display: flex;
+    gap: 5px;
+}
+
+input {
+    padding: 15px;
+    border: 1px solid rgb(86, 86, 86);
+    min-width: 100%;
+    text-align: center;
+    border-radius: 2px;
+}
+
+button {
+    background-color: white;
+    border: 1px solid rgb(86, 86, 86);
+    border-radius: 2px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.sticky {
+    position: fixed;
+    right: 1;
+    bottom: 0;
+    margin-bottom: 1rem;
+}
+
+.grid {
+    display: grid; 
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px 5px; 
+}
+
+@media only screen and (max-width: 600px) {
+    .grid {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 5px 5px; 
+    } 
+}
+@media only screen and (min-width: 600px) {
+    .grid {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 5px 5px; 
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px 5px; 
+    }   
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .grid {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px 5px; 
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .grid {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 5px 5px; 
+    }
+}
